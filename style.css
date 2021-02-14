@@ -1,0 +1,226 @@
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+:root{
+	--navbar-height:59px;
+}
+
+#logo{
+	margin:10px 30px;
+	height:40px;
+
+
+}
+#logo img{
+	margin: 0px;
+	height: 43px;
+	width: 70px;
+
+
+}
+
+#navbar{
+	display: flex;
+	align-items: center;
+	
+	position: sticky;
+	top: 0px;
+}
+
+#navbar ul{
+	display: flex;
+}
+#navbar::before{
+	content: "";
+	background-color:gray;
+	position:absolute ;
+	height:100%;
+	width:100%;
+	z-index: -1;
+	opacity: 0.3;
+}
+
+#navbar ul li{
+	list-style: none;
+	font-size: 1.8rem;
+}
+
+#navbar ul li a{
+	color:white;
+	display:block;
+	padding:3px 22px;
+	border-radius:20px;
+	text-decoration: none;
+}
+
+
+#navbar ul li a:hover {
+	color:red;
+	background:white;
+}
+
+#home{
+	display: flex;
+	flex-direction: column;
+	padding: 3px 200px;
+	justify-content: center;
+	align-items: center;
+}
+body{
+			background-image:url(bg10.jpg);
+			background-repeat:no-repeat;
+			
+			color:white;
+			background-size: 1550px 750px;
+
+
+		}
+
+#home p{
+	color:white;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+/* Services Section */
+#services{
+    margin: 34px ;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+   padding: 10px 90px;
+    margin: 20px 2px;
+    border-radius: 18px;
+    background: #f2f2f2;
+
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+   border-radius: 20px;
+}
+/* Clients section */
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('z.jpg');
+ width: 100%;
+ height: 54%;
+ z-index: -1;
+ opacity: 0.6;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+	align-items: center;
+	padding: 34px
+}
+#clients img{
+    width: 180px;
+    padding: 16px;
+    height: 180px;
+
+
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+	padding-top:5px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact.jfif') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   
+
+}
+
+
+footer{
+    background:#DCDCDC;
+    
+    padding: 9px 20px;
+}
+.h-primary{
+	font-size:4.5rem;
+	padding:12px;
+	color:white;
+	margin-top: 200px;
+
+}
+
+.our{
+	font-size:3.8rem;
+	padding:12px;
+	color:black;
+margin-top: 188px;
+	text-align: center;
+
+}
+
+.h-secondary{
+	font-size:1.8rem;
+	padding:12px;
+	text-align: center;
+	color: black;
+
+
+	
+
+}
+.btn{
+	padding: 6px 20px;
+	border:2px solid red;
+	background-color:brown;
+	color: white;
+	margin:30px;
+	font-size: 1.5rem;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.center{
+	text-align: center;
+	color:black;
+	margin-top: 0px;
+
+}
